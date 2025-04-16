@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Lain</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <header>
+        <h1>Riwayat Serial</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="p2-datadiri.html">Bio Data Autor</a></li>
+            <li><a href="p2-halamanlain.html">Riwayat Serial</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Riwayat Serial @kecoak_mabook</h2>
+            <p><a href="index.html">mertua buronan - Bersambung</a></p>
+            <br>
+            <p><a href="index.html">kue terakhir bunda - Tamat.</a></p>
+            <br>
+            <p><a href="index.html">kesadaran tobi part 2 - Tamat.</a></p>
+            <br>
+            <p><a href="index.html">Lihat selengkapnya..</a></p>  
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 kecoak_mabook.com</p>
+    </footer>
+
+<!-- Tombol Scroll ke Atas -->
+<button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+
+<script>
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      scrollTopBtn.classList.add('show');
+    } else {
+      scrollTopBtn.classList.remove('show');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</body>
+</html>

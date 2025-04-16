@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <header>
+        <h1>Data Diri Autor</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="p2-datadiri.html">Bio Data Autor</a></li>
+            <li><a href="p2-halamanlain.html">Riwayat Serial</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Profil Autor</h2>
+            <p>Nama: Hanna Sabatina</p>
+            <p>tanggal hahir: 12 februari</p>
+            <p>jadwal update: setiap sabtu & minggu</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 kecoak_mabook.com</p>
+    </footer>
+
+<!-- Tombol Scroll ke Atas -->
+<button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+
+<script>
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      scrollTopBtn.classList.add('show');
+    } else {
+      scrollTopBtn.classList.remove('show');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</body>
+</html>
